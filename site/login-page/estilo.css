@@ -1,0 +1,144 @@
+body {
+	margin: 0px;
+}
+
+button:focus {
+	outline:0;
+}
+
+.register-container {
+	height: 500px;
+	background-image: url("login-page/bg.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;	
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.header-login-panel {
+	float: right;
+	margin-top: 20px;
+    margin-right: 50px;
+}
+
+.header-login-item {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-login-input {
+	border-width: 2px;
+    border-style: solid;
+    font-size: 13px;
+    text-align: left;
+    padding: 2px;
+    border-color: #456879;
+    padding-left: 10px;
+}
+
+.header-login-button {
+	background-color:#44c767;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:3px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.header-login-button:hover {
+	background-color:#5cbf2a;
+}
+
+.header-login-button:active {
+	position:relative;
+	top:1px;
+}
+
+.logo-img {
+	height: 60px;
+}
+
+.calling-panel {
+	float: left;
+	margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calling-panel p {
+	color: #fff;
+	font-family: verdana, sans-serif;
+    font-size: 18px;
+}
+
+.register-panel {
+	float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.register-input {
+	background:#F8F8F8;
+	color:#999999;
+	border:3px solid #2C9116;
+	border-radius:10px ;
+	font-size:16px ;
+	height: 20px ;
+	line-height:20px ;
+	width: 257px ;
+	padding: 8px ;
+	box-shadow: 0px 0px 8px #DCDCDC;
+	-webkit-box-shadow: 0px 0px 8px #DCDCDC;
+	-moz-box-shadow: 0px 0px 8px #DCDCDC; 
+	margin-bottom: 30px;
+}
+
+.register-button {
+	background-color:#44c767;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	padding:9px 33px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.register-button:hover {
+	background-color:#5cbf2a;
+}
+
+.register-button:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+	padding-top: 20px;
+	color: #808080;
+}
+
+footer span {
+	margin-left: 10%;
+}
