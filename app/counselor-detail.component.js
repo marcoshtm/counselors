@@ -9,10 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var counselor_1 = require('./counselor');
+var counselor_service_1 = require('./service/counselor.service');
 var CounselorDetailComponent = (function () {
-    function CounselorDetailComponent() {
+    function CounselorDetailComponent(counselorService, route) {
+        this.counselorService = counselorService;
+        this.route = route;
     }
+    CounselorDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            var id = +params['id'];
+            _this.counselorService.getCounselor(id)
+                .then(function (counselor) { return _this.counselor = counselor; });
+        });
+    };
+    CounselorDetailComponent.prototype.goBack = function () {
+        window.history.back();
+    };
+    CounselorDetailComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', counselor_1.Counselor)
@@ -20,9 +38,10 @@ var CounselorDetailComponent = (function () {
     CounselorDetailComponent = __decorate([
         core_1.Component({
             selector: 'counselor-detail',
-            template: "\n\t\t<div *ngIf=\"counselor\">\n\t\t\t<h2>{{counselor.name}} details!</h2>\n\t\t\t<div><label>Id:</label> {{counselor.id}}</div>\n\t\t\t<div><label>Nome:</label> <input [(ngModel)]=\"counselor.name\" placeholder=\"name\" /></div>\n\t\t</div>"
+            templateUrl: 'app/html/counselor-detail.component.html',
+            styleUrls: ['app/css/counselor-detail.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [counselor_service_1.CounselorService, router_1.ActivatedRoute])
     ], CounselorDetailComponent);
     return CounselorDetailComponent;
 }());

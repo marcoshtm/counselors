@@ -1,6 +1,6 @@
-import { Counselor } from './counselor';
+import { Counselor } from '../counselor';
 
-export const COUNSELORS: Counselor[] = [
+const COUNSELORS: Counselor[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },

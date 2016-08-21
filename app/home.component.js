@@ -9,18 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var mock_counselours_1 = require('./mock-counselours');
-var CounselorService = (function () {
-    function CounselorService() {
+var router_1 = require('@angular/router');
+var HomeComponent = (function () {
+    function HomeComponent(router) {
+        this.router = router;
     }
-    CounselorService.prototype.getCounselors = function () {
-        return Promise.resolve(mock_counselours_1.COUNSELORS);
+    HomeComponent.prototype.askAdvice = function () {
+        var link = ['/askAdvice', ''];
+        this.router.navigate(link);
     };
-    CounselorService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], CounselorService);
-    return CounselorService;
+    HomeComponent.prototype.giveAdvice = function () {
+        var link = ['/giveAdvice', ''];
+        this.router.navigate(link);
+    };
+    HomeComponent = __decorate([
+        core_1.Component({
+            selector: 'home',
+            templateUrl: 'app/html/home.component.html',
+            styleUrls: ['app/css/home.component.css']
+        }), 
+        __metadata('design:paramtypes', [router_1.Router])
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.CounselorService = CounselorService;
-//# sourceMappingURL=counselor.service.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map
