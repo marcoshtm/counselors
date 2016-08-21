@@ -1,0 +1,13 @@
+/* Master Styles */
+body {
+  margin: 0px;
+}
+button:focus {
+  outline:0;
+}
+
+/* . . . */
+/* everywhere else */
+* { 
+  font-family: Arial, Helvetica, sans-serif; 
+}
