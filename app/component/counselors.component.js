@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var counselor_detail_component_1 = require('./counselor-detail.component');
-var counselor_service_1 = require('./service/counselor.service');
+var counselor_service_1 = require('../service/counselor.service');
 var router_1 = require('@angular/router');
 var CounselorsComponent = (function () {
     function CounselorsComponent(router, counselorService) {
