@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Counselor } from './counselor';
-import { CounselorService } from './service/counselor.service';
+import { Counselor } from '../domain/counselor';
+import { CounselorService } from '../service/counselor.service';
 import { Router } from '@angular/router';
 
 @Component({

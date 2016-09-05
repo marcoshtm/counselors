@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CounselorDetailComponent } from './counselor-detail.component';
-import { Counselor } from './counselor';
-import { CounselorService } from './service/counselor.service';
+import { Counselor } from '../domain/counselor';
+import { CounselorService } from '../service/counselor.service';
 import { OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 

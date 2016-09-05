@@ -1,4 +1,4 @@
-import { Counselor } from '../counselor';
+import { Counselor } from '../domain/counselor';
 
 export const COUNSELORS: Counselor[] = [
   { id: 11, name: 'Mr. Nice' },

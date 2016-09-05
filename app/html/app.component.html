@@ -1,21 +1,24 @@
 <header class="container">
-    <img class="logo-img" src="app/img/advice-now.png" />
-    <nav class="header-nav-bar">
-        <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
-        <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
-        <a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
-        <a [routerLink]="['/counselors']" routerLinkActive="active">Conselheiros</a>
-    </nav>
-    <div class="header-login-panel">
-        <input class="header-login-item header-login-input" type="text" placeholder="e-mail" />
-        <input class="header-login-item header-login-input" type="password" placeholder="senha" />
-        <input class="header-login-item header-login-button" type="button" value="Entrar" [routerLink]="['/login']" routerLinkActive="active"/>
+    <div class="ui-g">
+        <div class="ui-g-12 ui-md-4 ui-lg-2">
+            <img class="logo-img" src="app/img/advice-now.png" />
+        </div>
+        <div class="ui-g-12 ui-md-8 ui-lg-5">
+            <nav class="header-nav-bar">
+                <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
+                <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+                <a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
+                <a [routerLink]="['/counselors']" routerLinkActive="active">Conselheiros</a>
+            </nav>
+        </div>
+        <div class="ui-g-12 ui-md-12 ui-lg-5">
+            <div class="header-login-panel">
+                <input class="header-login-item header-login-input" type="text" placeholder="e-mail" />
+                <input class="header-login-item header-login-input" type="password" placeholder="senha" />
+                <input class="header-login-item header-login-button" type="button" value="Entrar" [routerLink]="['/login']" routerLinkActive="active"/>
+            </div>
+        </div>
     </div>
 </header>
 
 <router-outlet></router-outlet>
-
-<footer>
-    <span>Um novo conceito em rede social, no Brasil.</span> <br />
-    <span>Advice.now © 2016</span>
-</footer>

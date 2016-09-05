@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Counselor } from './counselor';
-import { CounselorService } from './service/counselor.service';
+import { Counselor } from '../domain/counselor';
+import { CounselorService } from '../service/counselor.service';
 
 @Component ({
 	selector: 'counselor-detail',

@@ -1,14 +1,14 @@
 import { provideRouter, RouterConfig } from '@angular/router';
-import { CounselorsComponent } from './counselors.component';
-import { DashboardComponent } from './dashboard.component';
-import { LoginComponent } from './login.component';
-import { HomeComponent } from './home.component';
-import { CounselorDetailComponent } from './counselor-detail.component';
+import { CounselorsComponent } from './component/counselors.component';
+import { DashboardComponent } from './component/dashboard.component';
+import { LoginComponent } from './component/login.component';
+import { HomeComponent } from './component/home.component';
+import { CounselorDetailComponent } from './component/counselor-detail.component';
 
 const routes: RouterConfig = [
   {
 	path: '',
-	redirectTo: '/login',
+	redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -30,10 +30,6 @@ const routes: RouterConfig = [
   {
     path: 'detail/:id',
     component: CounselorDetailComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
   }
 ];
 

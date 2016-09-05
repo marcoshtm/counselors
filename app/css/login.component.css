@@ -1,17 +1,7 @@
-
-
 .register-container {
-	height: 500px;
 	background-image: url("app/img/bg.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
-}
-
-.container {
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;	
 }
 
 .calling-panel {
@@ -20,16 +10,17 @@
     margin-top: 10%;
 }
 
-.calling-panel p {
+.calling-p {
 	color: #fff;
 	font-family: verdana, sans-serif;
     font-size: 18px;
 }
 
 .register-panel {
-	float: right;
-    margin-right: 10%;
+	float: left;
+    margin-left: 10%;
     margin-top: 10%;
+	margin-bottom: 10%;
 }
 
 .register-input {
@@ -71,13 +62,4 @@
 .register-button:active {
 	position:relative;
 	top:1px;
-}
-
-footer {
-	padding-top: 20px;
-	color: #808080;
-}
-
-footer span {
-	margin-left: 10%;
 }
