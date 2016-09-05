@@ -1,0 +1,102 @@
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+myheader {
+	margin: 0 auto;
+    padding-top: 13px;
+    width: 980px;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+
+
+
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 50px;
+    background: #fff;
+}
+
+.logo-img {
+    float: left;
+}
+
+.header-nav-bar {
+    float: left;
+}
+
+.header-login-panel {
+	float: right;
+	margin-top: 20px;
+    margin-right: 50px;
+}
+
+.header-login-item {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-login-input {
+	border-width: 2px;
+    border-style: solid;
+    font-size: 13px;
+    text-align: left;
+    padding: 2px;
+    border-color: #456879;
+    padding-left: 10px;
+}
+
+.header-login-button {
+	background-color:#44c767;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:3px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.header-login-button:hover {
+	background-color:#5cbf2a;
+}
+
+.header-login-button:active {
+	position:relative;
+	top:1px;
+}
+
+.logo-img {
+	height: 60px;
+}

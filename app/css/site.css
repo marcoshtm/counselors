@@ -1,0 +1,83 @@
+
+
+.register-container {
+	height: 500px;
+	background-image: url("app/img/bg.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;	
+}
+
+.calling-panel {
+	float: left;
+	margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calling-panel p {
+	color: #fff;
+	font-family: verdana, sans-serif;
+    font-size: 18px;
+}
+
+.register-panel {
+	float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.register-input {
+	background:#F8F8F8;
+	color:#999999;
+	border:3px solid #2C9116;
+	border-radius:10px ;
+	font-size:16px ;
+	height: 40px ;
+	line-height:20px ;
+	width: 350px ;
+	padding: 8px ;
+	box-shadow: 0px 0px 8px #DCDCDC;
+	-webkit-box-shadow: 0px 0px 8px #DCDCDC;
+	-moz-box-shadow: 0px 0px 8px #DCDCDC; 
+	margin-bottom: 30px;
+}
+
+.register-button {
+	background-color:#44c767;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	padding:9px 33px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.register-button:hover {
+	background-color:#5cbf2a;
+}
+
+.register-button:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+	padding-top: 20px;
+	color: #808080;
+}
+
+footer span {
+	margin-left: 10%;
+}
