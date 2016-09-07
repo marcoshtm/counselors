@@ -9,16 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var LoginComponent = (function () {
-    function LoginComponent() {
+    function LoginComponent(router) {
+        this.router = router;
     }
+    LoginComponent.prototype.register = function (event) {
+        this.router.navigate(['/home']);
+    };
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'login',
-            template: "\n\t\t<section class=\"register-container\">\n\t\t\t<div class=\"ui-g\">\n\t\t\t\t<div class=\"ui-g-12 ui-md-7 ui-lg-7\">\n\t\t\t\t\t<div class=\"calling-panel\">\n\t\t\t\t\t\t<p class=\"calling-p\">\"Amizades. Em conversas particulares.\"</p> <br /><br />\n\t\t\t\t\t\t<p class=\"calling-p\">Pe\u00E7a um conselho, ou aconselhe algu\u00E9m.<br />\n\t\t\t\t\t\t<p class=\"calling-p\">\u00C9 gratificante e revelador.</p> <br />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"ui-g-12 ui-md-5 ui-lg-5\">\n\t\t\t\t\t<div class=\"register-panel\">\n\t\t\t\t\t\t<input class=\"register-item register-input ui-g-12\" type=\"text\" placeholder=\"Nome\" /> <br />\n\t\t\t\t\t\t<input class=\"register-item register-input ui-g-12\" type=\"text\" placeholder=\"Sobrenome\" /> <br />\n\t\t\t\t\t\t<input class=\"register-item register-input ui-g-12\" type=\"text\" placeholder=\"Email\" /> <br />\n\t\t\t\t\t\t<input class=\"register-item register-input ui-g-12\" type=\"password\" placeholder=\"Nova senha\" /> <br />\n\t\t\t\t\t\t<input class=\"register-item register-button ui-g-12\" type=\"button\" value=\"Cadastre-se\" /> <br />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</section>\n\t",
+            templateUrl: 'app/html/login.component.html',
             styleUrls: ['app/css/login.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], LoginComponent);
     return LoginComponent;
 }());

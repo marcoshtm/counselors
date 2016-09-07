@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router } from '@angular/router';
 import { CounselorService } from '../service/counselor.service';
 
 export class Hero {
@@ -14,4 +15,7 @@ export class Hero {
   providers: [CounselorService]
 })
 export class AppComponent {
+  constructor(router:Router) {
+    router.navigate(['/login']);
+  }
 }

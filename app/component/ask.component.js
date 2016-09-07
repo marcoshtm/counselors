@@ -10,25 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var HomeComponent = (function () {
-    function HomeComponent(router) {
+var AskComponent = (function () {
+    function AskComponent(router) {
         this.router = router;
     }
-    HomeComponent.prototype.give = function (event) {
-        this.router.navigate(['/give']);
+    AskComponent.prototype.submit = function (event) {
+        this.router.navigate(['/home']);
     };
-    HomeComponent.prototype.ask = function (event) {
-        this.router.navigate(['/ask']);
-    };
-    HomeComponent = __decorate([
+    AskComponent = __decorate([
         core_1.Component({
-            selector: 'home',
-            templateUrl: 'app/html/home.component.html',
-            styleUrls: ['app/css/home.component.css']
+            selector: 'ask',
+            templateUrl: 'app/html/ask.component.html',
+            styleUrls: ['app/css/ask.component.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], HomeComponent);
-    return HomeComponent;
+    ], AskComponent);
+    return AskComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.AskComponent = AskComponent;
+//# sourceMappingURL=ask.component.js.map

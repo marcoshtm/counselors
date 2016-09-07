@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-	selector: 'login',
-	templateUrl: 'app/html/login.component.html',
-	styleUrls: ['app/css/login.component.css']
+  selector: 'give',
+  templateUrl: 'app/html/give.component.html',
+  styleUrls: ['app/css/give.component.css']
 })
 
-export class LoginComponent {
+export class GiveComponent {
 	router: Router;
 	constructor(router:Router) {
 		this.router = router;
 	}
-	register(event) {
+	submit(event) {
 		this.router.navigate(['/home']);
 	}
 }

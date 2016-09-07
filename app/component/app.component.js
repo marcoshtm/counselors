@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var router_2 = require('@angular/router');
 var counselor_service_1 = require('../service/counselor.service');
 var Hero = (function () {
     function Hero() {
@@ -18,7 +19,8 @@ var Hero = (function () {
 }());
 exports.Hero = Hero;
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        router.navigate(['/login']);
     }
     AppComponent = __decorate([
         core_1.Component({
@@ -28,7 +30,7 @@ var AppComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [counselor_service_1.CounselorService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_2.Router])
     ], AppComponent);
     return AppComponent;
 }());
