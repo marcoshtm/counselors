@@ -12,13 +12,28 @@ gulp.task('clean', function () {
 // TypeScript compile
 gulp.task('compile', ['clean'], function () {
   return gulp
-    .src(tscConfig.files)
+    .src('app/**/*.ts')
     .pipe(sourcemaps.init())          
     .pipe(typescript(tscConfig.compilerOptions))
     .pipe(sourcemaps.write('.'))      
     .pipe(gulp.dest('dist/app'));
 });
 
+gulp.task('copy:libs', ['clean'], function() {
+  return gulp.src([
+      'node_modules/angular2/bundles/angular2-polyfills.js',
+      'node_modules/systemjs/dist/system.src.js',
+      'node_modules/rxjs/bundles/Rx.js',
+      'node_modules/angular2/bundles/angular2.dev.js',
+      'node_modules/angular2/bundles/router.dev.js'
+    ])
+    .pipe(gulp.dest('dist/lib'))
+});
 
-gulp.task('build', ['compile']);
+gulp.task('copy:assets', ['clean'], function() {
+  return gulp.src(['app/**/*', 'index.html', 'styles.css', '!app/**/*.ts'], { base : './' })
+    .pipe(gulp.dest('dist'))
+});
+
+gulp.task('build', ['compile', 'copy:libs', 'copy:assets']);
 gulp.task('default', ['build']);

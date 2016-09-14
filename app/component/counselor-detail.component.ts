@@ -23,7 +23,7 @@ export class CounselorDetailComponent implements OnInit, OnDestroy {
 	  this.sub = this.route.params.subscribe(params => {
         let id = +params['id'];
         this.counselorService.getCounselor(id)
-          .then(counselor => this.counselor = counselor);
+          .then((counselor:Counselor) => this.counselor = counselor);
        });
 	}
 	

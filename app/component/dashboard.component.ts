@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router, private counselorService: CounselorService) { }
   ngOnInit() {
     this.counselorService.getCounselors()
-      .then(counselors => this.counselors = counselors.slice(1, 5));
+      .then((counselors:any) => this.counselors = counselors.slice(1, 5));
   }
   gotoDetail(counselor: Counselor) {
 	let link = ['/detail', counselor.id];

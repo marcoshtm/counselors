@@ -25,7 +25,7 @@ export class CounselorsComponent implements OnInit {
 	}
 	
 	getCounselors() {
-		this.counselorService.getCounselors().then(counselors => this.counselors = counselors);
+		this.counselorService.getCounselors().then((counselors:any) => this.counselors = counselors);
 	}
 	
 	onSelect(counselor: Counselor) {
