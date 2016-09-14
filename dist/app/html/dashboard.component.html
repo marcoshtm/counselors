@@ -1,0 +1,8 @@
+<h3>Top Counselors</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let counselor of counselors" (click)="gotoDetail(counselor)" class="col-1-4">
+    <div class="module hero">
+      <h4>{{counselor.name}}</h4>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "app",
-    "target": "ES5",
+    "outDir": "dist/app",
+    "target": "ES6",
     "module": "system",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
