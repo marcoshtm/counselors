@@ -12,7 +12,7 @@ export class GiveComponent {
 	constructor(router:Router) {
 		this.router = router;
 	}
-	submit(event) {
+	submit(event: any) {
 		this.router.navigate(['/home']);
 	}
 }

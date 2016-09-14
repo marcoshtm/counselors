@@ -12,7 +12,7 @@ export class LoginComponent {
 	constructor(router:Router) {
 		this.router = router;
 	}
-	register(event) {
+	register(event: any) {
 		this.router.navigate(['/home']);
 	}
 }

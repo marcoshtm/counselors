@@ -12,10 +12,10 @@ export class HomeComponent {
     constructor(router:Router) {
         this.router = router;
     }
-    give(event) {
+    give(event: any) {
         this.router.navigate(['/give']);
     }
-    ask(event) {
+    ask(event: any) {
         this.router.navigate(['/ask']);
     }
 }
