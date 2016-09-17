@@ -24,32 +24,33 @@ System.register(['@angular/core', '../service/counselor.service', '@angular/rout
                 router_1 = router_1_1;
             }],
         execute: function() {
-            let DashboardComponent = class DashboardComponent {
-                constructor(router, counselorService) {
+            DashboardComponent = (function () {
+                function DashboardComponent(router, counselorService) {
                     this.router = router;
                     this.counselorService = counselorService;
                     this.counselors = [];
                 }
-                ngOnInit() {
+                DashboardComponent.prototype.ngOnInit = function () {
+                    var _this = this;
                     this.counselorService.getCounselors()
-                        .then((counselors) => this.counselors = counselors.slice(1, 5));
-                }
-                gotoDetail(counselor) {
-                    let link = ['/detail', counselor.id];
+                        .then(function (counselors) { return _this.counselors = counselors.slice(1, 5); });
+                };
+                DashboardComponent.prototype.gotoDetail = function (counselor) {
+                    var link = ['/detail', counselor.id];
                     this.router.navigate(link);
-                }
-            };
-            DashboardComponent = __decorate([
-                core_1.Component({
-                    selector: 'my-dashboard',
-                    templateUrl: 'app/html/dashboard.component.html',
-                    styleUrls: ['app/css/dashboard.component.css']
-                }), 
-                __metadata('design:paramtypes', [router_1.Router, counselor_service_1.CounselorService])
-            ], DashboardComponent);
+                };
+                DashboardComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-dashboard',
+                        templateUrl: 'app/html/dashboard.component.html',
+                        styleUrls: ['app/css/dashboard.component.css']
+                    }), 
+                    __metadata('design:paramtypes', [router_1.Router, counselor_service_1.CounselorService])
+                ], DashboardComponent);
+                return DashboardComponent;
+            }());
             exports_1("DashboardComponent", DashboardComponent);
         }
     }
 });
-
 //# sourceMappingURL=dashboard.component.js.map

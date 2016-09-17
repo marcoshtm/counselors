@@ -10,8 +10,8 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1;
-    var GiveComponent;
+    var core_1, router_1, router_2;
+    var Hero, AppComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -19,27 +19,32 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+                router_2 = router_1_1;
             }],
         execute: function() {
-            GiveComponent = (function () {
-                function GiveComponent(router) {
-                    this.router = router;
+            Hero = (function () {
+                function Hero() {
                 }
-                GiveComponent.prototype.submit = function (event) {
-                    this.router.navigate(['/home']);
-                };
-                GiveComponent = __decorate([
-                    core_1.Component({
-                        selector: 'give',
-                        templateUrl: 'app/html/give.component.html',
-                        styleUrls: ['app/css/give.component.css']
-                    }), 
-                    __metadata('design:paramtypes', [router_1.Router])
-                ], GiveComponent);
-                return GiveComponent;
+                return Hero;
             }());
-            exports_1("GiveComponent", GiveComponent);
+            exports_1("Hero", Hero);
+            AppComponent = (function () {
+                function AppComponent(router) {
+                    router.navigate(['/login']);
+                }
+                AppComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-app',
+                        templateUrl: 'app/root/root.component.html',
+                        styleUrls: ['app/root/root.component.css'],
+                        directives: [router_1.ROUTER_DIRECTIVES]
+                    }), 
+                    __metadata('design:paramtypes', [router_2.Router])
+                ], AppComponent);
+                return AppComponent;
+            }());
+            exports_1("AppComponent", AppComponent);
         }
     }
 });
-//# sourceMappingURL=give.component.js.map
+//# sourceMappingURL=root.component.js.map

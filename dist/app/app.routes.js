@@ -1,7 +1,7 @@
-System.register(['@angular/router', './component/login.component', './component/counselors.component', './component/dashboard.component', './component/home.component', './component/give.component', './component/ask.component', './component/counselor-detail.component'], function(exports_1, context_1) {
+System.register(['@angular/router', './component/login.component', './component/counselors.component', './component/dashboard.component', './component/home.component', './advice/ask/ask.component', './advice/give/give.component', './component/counselor-detail.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var router_1, login_component_1, counselors_component_1, dashboard_component_1, home_component_1, give_component_1, ask_component_1, counselor_detail_component_1;
+    var router_1, login_component_1, counselors_component_1, dashboard_component_1, home_component_1, ask_component_1, give_component_1, counselor_detail_component_1;
     var routes, appRouterProviders;
     return {
         setters:[
@@ -20,11 +20,11 @@ System.register(['@angular/router', './component/login.component', './component/
             function (home_component_1_1) {
                 home_component_1 = home_component_1_1;
             },
-            function (give_component_1_1) {
-                give_component_1 = give_component_1_1;
-            },
             function (ask_component_1_1) {
                 ask_component_1 = ask_component_1_1;
+            },
+            function (give_component_1_1) {
+                give_component_1 = give_component_1_1;
             },
             function (counselor_detail_component_1_1) {
                 counselor_detail_component_1 = counselor_detail_component_1_1;
@@ -45,5 +45,4 @@ System.register(['@angular/router', './component/login.component', './component/
         }
     }
 });
-
 //# sourceMappingURL=app.routes.js.map

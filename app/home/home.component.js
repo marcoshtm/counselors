@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1;
-    var GiveComponent;
+    var HomeComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -21,25 +21,28 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            GiveComponent = (function () {
-                function GiveComponent(router) {
+            HomeComponent = (function () {
+                function HomeComponent(router) {
                     this.router = router;
                 }
-                GiveComponent.prototype.submit = function (event) {
-                    this.router.navigate(['/home']);
+                HomeComponent.prototype.give = function (event) {
+                    this.router.navigate(['/give']);
                 };
-                GiveComponent = __decorate([
+                HomeComponent.prototype.ask = function (event) {
+                    this.router.navigate(['/ask']);
+                };
+                HomeComponent = __decorate([
                     core_1.Component({
-                        selector: 'give',
-                        templateUrl: 'app/html/give.component.html',
-                        styleUrls: ['app/css/give.component.css']
+                        selector: 'home',
+                        templateUrl: 'app/home/home.component.html',
+                        styleUrls: ['app/home/home.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
-                ], GiveComponent);
-                return GiveComponent;
+                ], HomeComponent);
+                return HomeComponent;
             }());
-            exports_1("GiveComponent", GiveComponent);
+            exports_1("HomeComponent", HomeComponent);
         }
     }
 });
-//# sourceMappingURL=give.component.js.map
+//# sourceMappingURL=home.component.js.map

@@ -21,28 +21,28 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            let HomeComponent = class HomeComponent {
-                constructor(router) {
+            HomeComponent = (function () {
+                function HomeComponent(router) {
                     this.router = router;
                 }
-                give(event) {
+                HomeComponent.prototype.give = function (event) {
                     this.router.navigate(['/give']);
-                }
-                ask(event) {
+                };
+                HomeComponent.prototype.ask = function (event) {
                     this.router.navigate(['/ask']);
-                }
-            };
-            HomeComponent = __decorate([
-                core_1.Component({
-                    selector: 'home',
-                    templateUrl: 'app/html/home.component.html',
-                    styleUrls: ['app/css/home.component.css']
-                }), 
-                __metadata('design:paramtypes', [router_1.Router])
-            ], HomeComponent);
+                };
+                HomeComponent = __decorate([
+                    core_1.Component({
+                        selector: 'home',
+                        templateUrl: 'app/html/home.component.html',
+                        styleUrls: ['app/css/home.component.css']
+                    }), 
+                    __metadata('design:paramtypes', [router_1.Router])
+                ], HomeComponent);
+                return HomeComponent;
+            }());
             exports_1("HomeComponent", HomeComponent);
         }
     }
 });
-
 //# sourceMappingURL=home.component.js.map

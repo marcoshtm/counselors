@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1;
-    var GiveComponent;
+    var AskComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -21,25 +21,25 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            GiveComponent = (function () {
-                function GiveComponent(router) {
+            AskComponent = (function () {
+                function AskComponent(router) {
                     this.router = router;
                 }
-                GiveComponent.prototype.submit = function (event) {
+                AskComponent.prototype.submit = function (event) {
                     this.router.navigate(['/home']);
                 };
-                GiveComponent = __decorate([
+                AskComponent = __decorate([
                     core_1.Component({
-                        selector: 'give',
-                        templateUrl: 'app/html/give.component.html',
-                        styleUrls: ['app/css/give.component.css']
+                        selector: 'ask',
+                        templateUrl: 'app/advice/ask/ask.component.html',
+                        styleUrls: ['app/advice/ask/ask.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
-                ], GiveComponent);
-                return GiveComponent;
+                ], AskComponent);
+                return AskComponent;
             }());
-            exports_1("GiveComponent", GiveComponent);
+            exports_1("AskComponent", AskComponent);
         }
     }
 });
-//# sourceMappingURL=give.component.js.map
+//# sourceMappingURL=ask.component.js.map

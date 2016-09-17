@@ -27,38 +27,39 @@ System.register(['@angular/core', './counselor-detail.component', '../service/co
                 router_1 = router_1_1;
             }],
         execute: function() {
-            let CounselorsComponent = class CounselorsComponent {
-                constructor(router, counselorService) {
+            CounselorsComponent = (function () {
+                function CounselorsComponent(router, counselorService) {
                     this.router = router;
                     this.counselorService = counselorService;
                     this.title = 'Conselheiros';
                 }
-                ngOnInit() {
+                CounselorsComponent.prototype.ngOnInit = function () {
                     this.getCounselors();
-                }
-                getCounselors() {
-                    this.counselorService.getCounselors().then((counselors) => this.counselors = counselors);
-                }
-                onSelect(counselor) {
+                };
+                CounselorsComponent.prototype.getCounselors = function () {
+                    var _this = this;
+                    this.counselorService.getCounselors().then(function (counselors) { return _this.counselors = counselors; });
+                };
+                CounselorsComponent.prototype.onSelect = function (counselor) {
                     this.selectedCounselor = counselor;
-                }
-                gotoDetail() {
-                    let link = ['/detail', this.selectedCounselor.id];
+                };
+                CounselorsComponent.prototype.gotoDetail = function () {
+                    var link = ['/detail', this.selectedCounselor.id];
                     this.router.navigate(link);
-                }
-            };
-            CounselorsComponent = __decorate([
-                core_1.Component({
-                    selector: 'my-counselors',
-                    templateUrl: 'app/html/counselors.component.html',
-                    styleUrls: ['app/css/counselors.component.css'],
-                    directives: [counselor_detail_component_1.CounselorDetailComponent]
-                }), 
-                __metadata('design:paramtypes', [router_1.Router, counselor_service_1.CounselorService])
-            ], CounselorsComponent);
+                };
+                CounselorsComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-counselors',
+                        templateUrl: 'app/html/counselors.component.html',
+                        styleUrls: ['app/css/counselors.component.css'],
+                        directives: [counselor_detail_component_1.CounselorDetailComponent]
+                    }), 
+                    __metadata('design:paramtypes', [router_1.Router, counselor_service_1.CounselorService])
+                ], CounselorsComponent);
+                return CounselorsComponent;
+            }());
             exports_1("CounselorsComponent", CounselorsComponent);
         }
     }
 });
-
 //# sourceMappingURL=counselors.component.js.map

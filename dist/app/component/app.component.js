@@ -25,27 +25,30 @@ System.register(['@angular/core', '@angular/router', '../service/counselor.servi
                 counselor_service_1 = counselor_service_1_1;
             }],
         execute: function() {
-            class Hero {
-            }
+            Hero = (function () {
+                function Hero() {
+                }
+                return Hero;
+            }());
             exports_1("Hero", Hero);
-            let AppComponent = class AppComponent {
-                constructor(router) {
+            AppComponent = (function () {
+                function AppComponent(router) {
                     router.navigate(['/login']);
                 }
-            };
-            AppComponent = __decorate([
-                core_1.Component({
-                    selector: 'my-app',
-                    templateUrl: 'app/html/app.component.html',
-                    styleUrls: ['app/css/app.component.css'],
-                    directives: [router_1.ROUTER_DIRECTIVES],
-                    providers: [counselor_service_1.CounselorService]
-                }), 
-                __metadata('design:paramtypes', [router_2.Router])
-            ], AppComponent);
+                AppComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-app',
+                        templateUrl: 'app/html/app.component.html',
+                        styleUrls: ['app/css/app.component.css'],
+                        directives: [router_1.ROUTER_DIRECTIVES],
+                        providers: [counselor_service_1.CounselorService]
+                    }), 
+                    __metadata('design:paramtypes', [router_2.Router])
+                ], AppComponent);
+                return AppComponent;
+            }());
             exports_1("AppComponent", AppComponent);
         }
     }
 });
-
 //# sourceMappingURL=app.component.js.map

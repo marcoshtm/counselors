@@ -27,40 +27,41 @@ System.register(['@angular/core', '@angular/router', '../domain/counselor', '../
                 counselor_service_1 = counselor_service_1_1;
             }],
         execute: function() {
-            let CounselorDetailComponent = class CounselorDetailComponent {
-                constructor(counselorService, route) {
+            CounselorDetailComponent = (function () {
+                function CounselorDetailComponent(counselorService, route) {
                     this.counselorService = counselorService;
                     this.route = route;
                 }
-                ngOnInit() {
-                    this.sub = this.route.params.subscribe(params => {
-                        let id = +params['id'];
-                        this.counselorService.getCounselor(id)
-                            .then((counselor) => this.counselor = counselor);
+                CounselorDetailComponent.prototype.ngOnInit = function () {
+                    var _this = this;
+                    this.sub = this.route.params.subscribe(function (params) {
+                        var id = +params['id'];
+                        _this.counselorService.getCounselor(id)
+                            .then(function (counselor) { return _this.counselor = counselor; });
                     });
-                }
-                goBack() {
+                };
+                CounselorDetailComponent.prototype.goBack = function () {
                     window.history.back();
-                }
-                ngOnDestroy() {
+                };
+                CounselorDetailComponent.prototype.ngOnDestroy = function () {
                     this.sub.unsubscribe();
-                }
-            };
-            __decorate([
-                core_1.Input(), 
-                __metadata('design:type', counselor_1.Counselor)
-            ], CounselorDetailComponent.prototype, "counselor", void 0);
-            CounselorDetailComponent = __decorate([
-                core_1.Component({
-                    selector: 'counselor-detail',
-                    templateUrl: 'app/html/counselor-detail.component.html',
-                    styleUrls: ['app/css/counselor-detail.component.css']
-                }), 
-                __metadata('design:paramtypes', [counselor_service_1.CounselorService, router_1.ActivatedRoute])
-            ], CounselorDetailComponent);
+                };
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', counselor_1.Counselor)
+                ], CounselorDetailComponent.prototype, "counselor", void 0);
+                CounselorDetailComponent = __decorate([
+                    core_1.Component({
+                        selector: 'counselor-detail',
+                        templateUrl: 'app/html/counselor-detail.component.html',
+                        styleUrls: ['app/css/counselor-detail.component.css']
+                    }), 
+                    __metadata('design:paramtypes', [counselor_service_1.CounselorService, router_1.ActivatedRoute])
+                ], CounselorDetailComponent);
+                return CounselorDetailComponent;
+            }());
             exports_1("CounselorDetailComponent", CounselorDetailComponent);
         }
     }
 });
-
 //# sourceMappingURL=counselor-detail.component.js.map

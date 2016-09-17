@@ -21,25 +21,25 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            let AskComponent = class AskComponent {
-                constructor(router) {
+            AskComponent = (function () {
+                function AskComponent(router) {
                     this.router = router;
                 }
-                submit(event) {
+                AskComponent.prototype.submit = function (event) {
                     this.router.navigate(['/home']);
-                }
-            };
-            AskComponent = __decorate([
-                core_1.Component({
-                    selector: 'ask',
-                    templateUrl: 'app/html/ask.component.html',
-                    styleUrls: ['app/css/ask.component.css']
-                }), 
-                __metadata('design:paramtypes', [router_1.Router])
-            ], AskComponent);
+                };
+                AskComponent = __decorate([
+                    core_1.Component({
+                        selector: 'ask',
+                        templateUrl: 'app/html/ask.component.html',
+                        styleUrls: ['app/css/ask.component.css']
+                    }), 
+                    __metadata('design:paramtypes', [router_1.Router])
+                ], AskComponent);
+                return AskComponent;
+            }());
             exports_1("AskComponent", AskComponent);
         }
     }
 });
-
 //# sourceMappingURL=ask.component.js.map

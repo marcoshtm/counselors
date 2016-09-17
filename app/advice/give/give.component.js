@@ -31,8 +31,8 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 GiveComponent = __decorate([
                     core_1.Component({
                         selector: 'give',
-                        templateUrl: 'app/html/give.component.html',
-                        styleUrls: ['app/css/give.component.css']
+                        templateUrl: 'app/advice/give/give.component.html',
+                        styleUrls: ['app/advice/give/give.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_1.Router])
                 ], GiveComponent);

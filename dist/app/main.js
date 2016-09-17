@@ -20,5 +20,4 @@ System.register(['@angular/platform-browser-dynamic', './component/app.component
         }
     }
 });
-
 //# sourceMappingURL=main.js.map
