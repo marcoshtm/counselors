@@ -1,6 +1,6 @@
 # Counselors
 
-Aplicação demonstrativa de conceitos de Angular2.
+Aplicação demonstrativa para exercícios de conceitos de Angular2.
 
 See it running at:
 www.sistemasgerenciais.com.br
