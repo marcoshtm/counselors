@@ -2,17 +2,18 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-	selector: 'login',
-	templateUrl: 'app/login/login.component.html',
-	styleUrls: ['app/login/login.component.css']
+	selector: 'signup',
+	templateUrl: 'app/login/signup.component.html',
+	styleUrls: ['app/login/signup.component.css']
 })
 
-export class LoginComponent {
+
+export class SignupComponent {
 	router: Router;
 	constructor(router:Router) {
 		this.router = router;
 	}
-	register(event: any) {
+	signup(event: any) {
 		this.router.navigate(['/home']);
 	}
 }
