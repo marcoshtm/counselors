@@ -12,7 +12,7 @@ export class Hero {
   styleUrls: ['app/root/root.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
-export class AppComponent {
+export class RootComponent {
   constructor(router:Router) {
     router.navigate(['/login']);
   }

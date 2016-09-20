@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1, router_2;
-    var Hero, AppComponent;
+    var Hero, RootComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -28,11 +28,11 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 return Hero;
             }());
             exports_1("Hero", Hero);
-            AppComponent = (function () {
-                function AppComponent(router) {
+            RootComponent = (function () {
+                function RootComponent(router) {
                     router.navigate(['/login']);
                 }
-                AppComponent = __decorate([
+                RootComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/root/root.component.html',
@@ -40,10 +40,10 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [router_2.Router])
-                ], AppComponent);
-                return AppComponent;
+                ], RootComponent);
+                return RootComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("RootComponent", RootComponent);
         }
     }
 });

@@ -14,7 +14,7 @@ System.register(['@angular/platform-browser-dynamic', './root/root.component', '
                 app_routes_1 = app_routes_1_1;
             }],
         execute: function() {
-            platform_browser_dynamic_1.bootstrap(root_component_1.AppComponent, [
+            platform_browser_dynamic_1.bootstrap(root_component_1.RootComponent, [
                 app_routes_1.appRouterProviders
             ]);
         }
